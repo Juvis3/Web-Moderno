@@ -8,23 +8,12 @@
 <body>
     <header><h1>Exercícios HTML</h1></header>
     <nav>
-        <!-- <a href wm-nav="exercicios/teste.html" >00 - teste</a>  -->
-        <!-- <a href wm-nav="exercicios/temp.html">TEMPPPP</a> -->
         <button  onclick="mudatexto('exercicios/teste.html')">00 - teste</button> 
         <button  onclick="mudatexto('exercicios/temp.html')">TEMPPPP</button>
     </nav>
     <section id="conteudo"></section>
     <footer>Curso de Web moderno</footer><br>
     <script>
-        // document.querySelectorAll('[wm-nav]').forEach(link =>{
-        //     const conteudo = document.getElementById('conteudo')
-        // link.onclick = function(e) {
-        //     e.preventDefault() 
-        //     fetch (link.getAttribute('wm-nav'))
-        //         .then(resp => resp.text())
-        //         .then(html => conteudo.innerHTML = html)
-        // }
-        // }) 
         function mudatexto(url){
             fetch (url)
                 .then(resp => resp.text())
